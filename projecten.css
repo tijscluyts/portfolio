@@ -167,7 +167,7 @@
 
     /* Featured = first project, full width */
     .project.featured {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 340px;
       border-color: rgba(42,157,143,0.25);
       border-left: 3px solid var(--teal);
     }
@@ -305,6 +305,13 @@
       min-height: 220px;
       position: relative;
       overflow: hidden;
+    }
+
+    .project-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .visual-icon {
